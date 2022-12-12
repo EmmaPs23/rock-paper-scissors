@@ -2,9 +2,11 @@ const myArray = ["ROCK", "PAPER", "SCISSORS"];
 const playerSelection = [];
 const computerSelection = getComputerChoice();
 
+
 function getComputerChoice() {
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
+
 
 function checkWinner(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
@@ -19,8 +21,11 @@ function checkWinner(playerSelection, computerSelection) {
         return "You Lose!";
     }
 }
+
+
 function playRound(playerSelection, computerSelection) {
-    let result = checkWinner(playerSelection, computerSelection)
+    let result = checkWinner(playerSelection, computerSelection);
+    
     if (result == "Tie") {
         return "Nobody Wins!"
     }
@@ -36,12 +41,14 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-
 function game() {
+
     let playerScore = 0;
     let computerScore = 0;
+
     for (let i = 0; i < 5; i++) {
-        const playerSelection = prompt();
+
+        const playerSelection = prompt("ROCK, PAPER, SCISSORS");
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
 
@@ -57,25 +64,24 @@ function game() {
 
     }
 
-
     console.log("----------------");
     console.log(`player score = ${playerScore}`);
     console.log(`computer score = ${computerScore}`);
-    console.log("----------------");
 
     if (playerScore == computerScore) {
+        console.log('----------------');
         console.log("WE have a Tie!");
     }
     else if (playerScore > computerScore) {
+        console.log('----------------');
         console.log("You Are The Winner");
     }
     else if (computerScore > playerScore) {
-        console.log("You Lose. Computer is the winner")
+        console.log('----------------');
+        console.log("You Lose. Computer is the winner");
+        console.log('----------------');
+        
     }
-
-    console.log("----------------");
-    console.log(`player score = ${playerScore}`);
-    console.log(`computer score = ${computerScore}`);
 }
 
 game();
