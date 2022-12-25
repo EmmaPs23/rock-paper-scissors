@@ -1,0 +1,74 @@
+html,
+body {
+  height: 99%;
+}
+
+body {
+  background: radial-gradient(
+    circle at 52.1% -29.6%,
+    rgb(144, 17, 105) 0%,
+    rgb(51, 0, 131) 100.2%
+  );
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(201, 181, 235);
+  font-size: 50px;
+}
+
+p {
+  color: rgb(200, 169, 228);
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  background: radial-gradient(rgb(129, 70, 111) 0%, rgb(87, 3, 112) 100.2%);
+  border-color: rgb(65, 8, 47);
+  padding: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(200, 169, 228);
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(33, 6, 59);
+}
+
+#restartBtn {
+  background: radial-gradient(rgb(136, 64, 114) 0%, rgb(60, 1, 78) 100.2%);
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+#divContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 15px;
+  border-style: solid;
+  border-width: 4px;
+  border-spacing: 50px;
+  block-size: 300px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: x-large;
+  margin: 0 110px 0 110px;
+}
+
+#finalWinner {
+  color: rgb(236, 35, 226);
+  font-size: xx-large;
+  font-family: "Chivo Mono", monospace;
+}
